@@ -5,8 +5,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         sass: {
             options: {
-                outputStyle: 'compressed',
-                sourceMap: false
+                sourceMap: true
             },
             dist: {
                 files: {
