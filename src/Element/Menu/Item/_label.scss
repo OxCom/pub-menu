@@ -1,0 +1,22 @@
+.menu-item-label {
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    height: 100%;
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-left: 0.4rem solid transparent;
+    &-text {
+        // @link: http://htmlbook.ru/css/text-overflow
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        display: inline-block;
+    }
+}

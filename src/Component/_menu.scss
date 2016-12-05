@@ -1,0 +1,50 @@
+.menu {
+    @import "../Element/Menu/Item/label";
+    @import "../Element/Menu/Item/close";
+    @import "../Element/Menu/item";
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    // sub menu
+    &-sub {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+        top: 100%
+    }
+
+    // open sub-menu
+    .input:checked {
+        + .menu-item {
+            color: $colorBlack;
+            background-color: $colorWhite;
+            .menu-item {
+                &-close {
+                    display: block;
+                    visibility: visible;
+                }
+                &-label {
+                    border-left: 0.4rem solid $colorPrimary;
+                }
+            }
+        }
+        + .menu-item > .menu-sub {
+            position: absolute;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+
+            .menu-item-label {
+                color: $colorWhite;
+                background-color: $colorGray;
+            }
+        }
+    }
+}

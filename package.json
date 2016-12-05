@@ -1,0 +1,13 @@
+{
+  "name": "menu",
+  "version": "0.0.1",
+  "description": "Example of flexbox menu",
+  "author": "OxCom",
+  "license": "None",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
